@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./imagens/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#container {
+    width: 100%;
+}
+
+#header {
+    position: relative;
+    background-color: #e6b46f;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+#header .overlay {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(166, 162, 162, 0.3); /* Cor preta com opacidade */
+    border-radius: 5px;
+}
+
+#texto-header {
+    position: relative;
+    z-index: 2; /* Garante que o texto fique acima do overlay */
+}
+
+#logo {
+    text-align: right;
+    width: 50%;
+    height: 5%;
+}
+
+#logo img {
+    width: 10%;
+    height: 100%;
+    margin-right: 555px;
+}
+
+#menu {
+    text-align: left;   
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 3px;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#peca-ja {
+    background-color: #e6b46f;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#peca-ja:hover {
+    background-color: #c48f4c;
+}
+
+#content-1 {
+    position: relative;
+    background-color: transparent;
+    width: 98%;
+    height: 35vh;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 10px auto 0 auto;
+}
+
+#content-1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(166, 162, 162, 0.3); /* Cor preta com opacidade */
+    border-radius: 5px;
+}
+
+#texto-content-1 {
+    position: relative;
+    z-index: 2; /* Garante que o texto fique acima do overlay */
+}
+
+#content-1 h1 {
+    text-align: left;
+    margin-left: 15px;
+}
+
+#content-1 button {
+    background-color: #e6b46f;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+#content-1 button:hover {
+    background-color: #c48f4c;
+    
+}
+
+#content-1 span {
+    color: #c48f4c;
+}
+
+#cards {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#card-1 {
+    width: 33%;
+    border-radius: 5px;
+}
+
+#card-2 {
+    width: 33%;
+    border-radius: 5px;
+}
+
+#card-3 {
+    width: 33%;
+    border-radius: 5px;
+}
+
+#cards h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #c48f4c;
+}
+
+#bola {
+    width: 40px;
+    height: 40px;
+    background-color: #c48f4c;
+    position: absolute;
+    padding: 4px;
+    border-radius: 90%;
+    margin: 10px auto;
+    margin-left: 60px;
+}
+
+#bola:hover {
+    background-color: rgb(209, 164, 105);
+    transition: 0.3s;
+}
+
+#content-2 {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#content-2 table {
+    width: 100%;              /* ocupa 100% da largura do container */
+    margin: 0 auto;          /* centraliza */
+    border-collapse: collapse;
+}
+
+#content-2 td {
+    width: 35%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#content-2 tr {
+    font-size: 18px;
+    color: #b8823c;
+    font-weight: bold;
+    border-bottom: #c48f4c 2px solid; /* borda da tabela */
+}
+
+#content-2 img {
+    border: #c48f4c 2px solid; /* borda da tabela */
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 50px;
+    max-width: 180px;   /* limita a largura das imagens */
+    height: auto;       /* mantém proporção */
+}
+
+#content-2 img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #d9aa69d3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
